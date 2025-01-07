@@ -27,7 +27,7 @@ if (navigator.geolocation) {
 // Leaflet map setup
 const map = L.map("map").setView([0, 0], 16);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: "Your Attribution",
+    attribution: "Ayush Singla",
 }).addTo(map);
 
 const markers = {};
