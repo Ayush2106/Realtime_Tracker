@@ -34,7 +34,8 @@ res.render("index")
 app.set("view engine" , "ejs");
 app.use(express.static(path.join(__dirname, "public")))
 
-const PORT = 3000
-server.listen(PORT , () =>{
-    console.log(`Server is listening at port no: ${PORT}`)
-})
+const PORT = process.env.PORT || 3000;
+
+server.listen(PORT, () => {
+    console.log(`Server is listening at port no: ${PORT}`);
+});
